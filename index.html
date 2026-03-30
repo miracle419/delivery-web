@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DHL Express – Worldwide Delivery Solutions</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ─── NAV ─── -->
+    <nav>
+      <a href="index.html" class="nav-brand">
+        <div class="logo-placeholder" id="logoBox">
+          <img src="img/IMG-20260329-WA0039.jpg" alt="DHL EXPRESS" />
+        </div>
+        <div class="brand-name">DHL <span>EXPRESS</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="track.html">Track</a></li>
+        <li><a href="#">Ship</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="nav-cta">Get a Quote</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="track.html">Track Package</a>
+      <a href="#">Ship Now</a>
+      <a href="service.html">Our Services</a>
+      <a href="#">Business Solutions</a>
+      <a href="about.html">About DHL</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="#" style="color: var(--yellow) !important; font-weight: 700"
+        >Get a Quote →</a
+      >
+    </div>
+
+    <!-- ─── HERO ─── -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="hero-badge">Worldwide Express Delivery</div>
+        <h1>
+          Deliver<br />
+          <span class="accent">Anywhere.</span><br />
+          <span class="stroke">Anytime.</span>
+        </h1>
+        <p class="hero-sub">
+          Connecting businesses and people across 220+ countries and
+          territories. Fast, reliable, and secure international shipping — built
+          for the world.
+        </p>
+
+        <div class="track-box">
+          <h3>📦 Track Your Shipment</h3>
+          <div class="track-input-row">
+            <input
+              type="text"
+              id="trackingInput"
+              placeholder="Enter tracking number (e.g. DHL1234567890)"
+            />
+            <button class="track-btn" onclick="trackPackage()">
+              <svg
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.35-4.35" />
+              </svg>
+              TRACK
+            </button>
+          </div>
+          <p class="track-hint">
+            Enter a DHL Express, eCommerce, or Parcel tracking number
+          </p>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-num">220+</div>
+            <div class="stat-label">Countries</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">1.8B</div>
+            <div class="stat-label">Parcels / Year</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">600K+</div>
+            <div class="stat-label">Employees</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">24/7</div>
+            <div class="stat-label">Support</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SERVICES ─── -->
+    <section class="section">
+      <p class="section-label">What We Offer</p>
+      <h2 class="section-title">Our Services</h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        Tailored shipping solutions for individuals, SMEs, and global
+        enterprises — delivered with speed and precision.
+      </p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">✈️</div>
+          <h4>Express International</h4>
+          <p>
+            Door-to-door express delivery to over 220 countries. Guaranteed
+            time-definite delivery with full tracking.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <h4>Domestic Express</h4>
+          <p>
+            Same-day and next-day delivery within your country. Fast and
+            reliable for time-sensitive shipments.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📦</div>
+          <h4>Freight & Cargo</h4>
+          <p>
+            Heavy and oversized freight by air, ocean, and road. Custom
+            solutions for complex supply chains.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛒</div>
+          <h4>E-Commerce Shipping</h4>
+          <p>
+            End-to-end eCommerce logistics — fulfillment, delivery, and returns
+            built for online retailers.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">❄️</div>
+          <h4>Temp-Controlled</h4>
+          <p>
+            Specialized cold-chain logistics for pharmaceuticals, perishables,
+            and sensitive goods worldwide.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏭</div>
+          <h4>Supply Chain Solutions</h4>
+          <p>
+            Warehousing, distribution, and contract logistics tailored to your
+            industry's unique demands.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WHY DHL ─── -->
+    <section class="section why-section">
+      <div class="why-grid">
+        <div>
+          <p class="section-label">Why Choose DHL</p>
+          <h2 class="section-title">
+            The World's<br />Most Trusted<br />Carrier
+          </h2>
+          <div class="divider"></div>
+          <div class="why-features">
+            <div class="why-item">
+              <div class="why-num">01</div>
+              <div class="why-text">
+                <h4>Real-Time Tracking</h4>
+                <p>
+                  Live shipment visibility from pickup to delivery. Get instant
+                  notifications at every milestone.
+                </p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">02</div>
+              <div class="why-text">
+                <h4>On-Time Guarantee</h4>
+                <p>
+                  Industry-leading delivery performance backed by our money-back
+                  guarantee on express services.
+                </p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">03</div>
+              <div class="why-text">
+                <h4>Customs Expertise</h4>
+                <p>
+                  50+ years of international trade experience. We handle customs
+                  clearance so you don't have to.
+                </p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">04</div>
+              <div class="why-text">
+                <h4>24/7 Customer Support</h4>
+                <p>
+                  Multilingual support team available around the clock via
+                  phone, chat, and email.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-visual">
+          <h3>220+<br />Countries<br />& Territories</h3>
+          <p>The most extensive global network in the industry</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── GLOBAL ZONES ─── -->
+    <section class="section">
+      <p class="section-label">Global Reach</p>
+      <h2 class="section-title">We Deliver<br />Everywhere</h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        From major hubs to remote destinations — DHL's network reaches every
+        corner of the globe.
+      </p>
+      <div class="zones-grid">
+        <div class="zone-card">
+          <div class="zone-flag">🌍</div>
+          <div class="zone-info">
+            <h5>Europe</h5>
+            <p>All 44 countries</p>
+          </div>
+        </div>
+        <div class="zone-card">
+          <div class="zone-flag">🌎</div>
+          <div class="zone-info">
+            <h5>Americas</h5>
+            <p>North, Central & South</p>
+          </div>
+        </div>
+        <div class="zone-card">
+          <div class="zone-flag">🌏</div>
+          <div class="zone-info">
+            <h5>Asia Pacific</h5>
+            <p>48 markets</p>
+          </div>
+        </div>
+        <div class="zone-card">
+          <div class="zone-flag">🕌</div>
+          <div class="zone-info">
+            <h5>Middle East</h5>
+            <p>All GCC & beyond</p>
+          </div>
+        </div>
+        <div class="zone-card">
+          <div class="zone-flag">🌍</div>
+          <div class="zone-info">
+            <h5>Africa</h5>
+            <p>54 countries</p>
+          </div>
+        </div>
+        <div class="zone-card">
+          <div class="zone-flag">🧊</div>
+          <div class="zone-info">
+            <h5>Remote Zones</h5>
+            <p>Islands & territories</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ─── -->
+    <section class="cta-banner">
+      <h2>Ready to Ship<br />with Confidence?</h2>
+      <p>Join millions of customers who trust DHL Express every single day.</p>
+      <div class="btn-group">
+        <a href="contact.html" class="btn-primary">Get a Quote</a>
+        <a href="#" class="btn-outline">Create Shipment</a>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">
+            DHL <span style="color: var(--yellow)">EXPRESS</span>
+          </div>
+          <p>
+            Excellence. Simply Delivered. Your trusted partner for worldwide
+            express delivery and logistics solutions.
+          </p>
+          <div class="social-links">
+            <a href="#" title="Facebook">f</a>
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="Instagram">📷</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Shipping</h5>
+          <a href="#">Create Shipment</a>
+          <a href="#">Get a Quote</a>
+          <a href="#">Schedule Pickup</a>
+          <a href="#">Find Location</a>
+          <a href="#">Packaging Guide</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="#">Express International</a>
+          <a href="#">Domestic Delivery</a>
+          <a href="#">E-Commerce</a>
+          <a href="#">Freight & Cargo</a>
+          <a href="#">Supply Chain</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="contact.html">Contact Us</a>
+          <a href="about.html">About DHL</a>
+          <a href="#">Careers</a>
+          <a href="#">Newsroom</a>
+          <a href="#">Sustainability</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 DHL Express. All rights reserved.</p>
+        <div
+          style="
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+          "
+        >
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Settings</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Your Shipment – DHL Express</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="track.css">
+  </head>
+  <body>
+    <!-- ─── NAV ─── -->
+     <nav>
+      <a href="index.html" class="nav-brand">
+        <div class="logo-placeholder" id="logoBox">
+          <img src="img/IMG-20260329-WA0039.jpg" alt="DHL EXPRESS" />
+        </div>
+        <div class="brand-name">DHL <span>EXPRESS</span></div>
+      <a href="index.html" class="nav-back">← Back to Home</a>
+    </nav>
+
+    <div class="page-wrap">
+      <!-- Search bar -->
+      <div class="search-bar">
+        <input
+          type="text"
+          id="trackInput"
+          placeholder="Enter tracking number…"
+        />
+        <button onclick="searchTracking()">Track</button>
+      </div>
+
+      <!-- Result area -->
+      <div id="resultArea"></div>
+    </div>
+    <script src="track.js"></script>
+  </body>
+</html>
